@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaPrincipal">
+
+    <EditText
+        android:id="@+id/txtEstadoTicket"
+        android:layout_width="205dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Estado del ticket"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <EditText
+        android:id="@+id/txtTelefono"
+        android:layout_width="187dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <EditText
+        android:id="@+id/txtUbicacion"
+        android:layout_width="195dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Ubicacion "
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.361" />
+
+    <EditText
+        android:id="@+id/txtResponsable"
+        android:layout_width="194dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Responsable del ticket"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <EditText
+        android:id="@+id/txtCorreoAutor"
+        android:layout_width="198dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Correo Electornico"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.014"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.266" />
+
+    <EditText
+        android:id="@+id/txtNumeroTicket"
+        android:layout_width="189dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Numero de su ticket"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.013"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <EditText
+        android:id="@+id/txtDescripcionTicket"
+        android:layout_width="189dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:hint="Descripcion"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.157" />
+
+    <EditText
+        android:id="@+id/txtTituloTicket"
+        android:layout_width="198dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Titulo de su ticket"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.971"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Crea tu ticket"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCrearTicket"
+        android:layout_width="131dp"
+        android:layout_height="56dp"
+        android:text="CrearTicket"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.459" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvTicket"
+        android:layout_width="406dp"
+        android:layout_height="407dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imgAtras2"
+        android:layout_width="44dp"
+        android:layout_height="29dp"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_new_24"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
